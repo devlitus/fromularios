@@ -33,37 +33,8 @@
         </select>
         <label>Tipo de viaje</label>
       </div>
-      <p class="col s2">
-        <input class="with-gap" name="group1" type="radio" id="test1" />
-        <label for="test1">Barco</label>
-      </p>
-      <p class="col s2">
-        <input class="with-gap" name="group2" type="radio" id="test2" />
-        <label for="test2">Avión</label>
-      </p>
-      <p class="col s2">
-        <input class="with-gap" name="group3" type="radio" id="test3"  />
-        <label for="test3">Coche</label>
-      </p>
-      <p class="col s2">
-        <input class="with-gap" name="group4" type="radio" id="test4" />
-        <label for="test4">Tren</label>
-      </p>
-      <p class="col s2">
-        <input class="with-gap" name="group5" type="radio" id="test5" />
-        <label for="test5">bicleta</label>
-      </p>
-      <p class="col s2">
-        <input class="with-gap" name="group6" type="radio" id="test6" />
-        <label for="test6">Caminando</label>
-      </p>
-      <div class="row">
-        <p class="col s6 range-field">
-          <label for="test5">Presupuesto</label>
-          <input type="range" id="rango" min="100" max="300" />
-        </p>
-        <div class="input-field col s6">
-          <select multiple>
+      <div class="input-field col s6">
+        <select multiple>
             <optgroup label="Adultos">
               <option value="1">Solo</option>
               <option value="2">2 Personas</option>
@@ -80,25 +51,75 @@
               <option value="2">3 niños</option>
               <option value="2">4 niños</option>
               <option value="2">5 niños</option>
-          </optgroup>
-          <optgroup label="Niños entre 4-12">
+            </optgroup>
+            <optgroup label="Niños entre 4-12">
               <option value="3">1 niño</option>
               <option value="2">2 niños</option>
               <option value="2">3 niños</option>
               <option value="2">4 niños</option>
               <option value="2">5 niños</option>
-          </optgroup>
-        </select>
-    <label>Viajeros</label>
-  </div>
+            </optgroup>
+          </select>
+          <label>Viajeros</label>
       </div>
-      <div class="row">        
-        <p>
-         <input type="date" class="col s6 datepicker">
-        </p>
-      </div>
-      
     </div>
+    <div class="row">
+      <p>Transporte</p>
+      <p class="col s2">
+        <input class="with-gap" name="group1" type="radio" id="test1" />
+        <label for="test1">Barco</label>
+      </p>
+      <p class="col s2">
+        <input class="with-gap" name="group2" type="radio" id="test2" />
+        <label for="test2">Avión</label>
+      </p>
+        <p class="col s2">
+        <input class="with-gap" name="group3" type="radio" id="test3" />
+      <label for="test3">Coche</label>
+      </p>
+      <p class="col s2">
+        <input class="with-gap" name="group4" type="radio" id="test4" />
+        <label for="test4">Tren</label>
+      </p>
+      <p class="col s2">
+        <input class="with-gap" name="group5" type="radio" id="test5" />
+        <label for="test5">bicleta</label>
+      </p>
+      <p class="col s2">
+        <input class="with-gap" name="group6" type="radio" id="test6" />
+        <label for="test6">Caminando</label>
+      </p>
+    </div>
+    <div class="row">
+      <div class="col s6">
+        <input type="date" class="datepicker">
+      </div>
+      <p class="col s2">
+        <input type="checkbox" class="filled-in" id="boxRural" />
+        <label for="boxRural">Rural</label>
+      </p>
+      <p class="col s2">
+        <input type="checkbox" class="filled-in" id="boxUrbano" />
+        <label for="boxUrbano">Urbano</label>
+      </p>
+      <p class="col s2">
+        <input type="checkbox" class="filled-in" id="boxDesierto" />
+        <label for="boxDesierto">Desierto</label>
+      </p>
+    </div>
+    <div class="row">
+      <p class="col s12 range-field">
+        <label for="test5">Presupuesto</label>
+        <input type="range" id="rango" min="100" max="300" />
+      </p>
+      <div class="input-field col s12">
+        <textarea id="textarea1" class="materialize-textarea" maxlength="300"></textarea>
+        <label for="textarea1">Textarea</label>
+      </div>
+    </div>
+    <button class=" btn waves-effect waves-light" type="submit" name="action">Enviar
+      <i class="fa fa-check" aria-hidden="true"></i>
+    </button>
   </form>
 </div>
 
@@ -137,3 +158,4 @@ Añade botón para borrar datos formulario
 
 El método debe ser por POST
  -->
+
